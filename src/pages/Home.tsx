@@ -6,6 +6,8 @@ import ProjectList from '../components/ProjectList';
 
 import About from '../components/About';
 import Footer from '../components/Footer';
+import ProjectIdeas from '../components/ProjectIdeas';
+import SubscribeToNews from '../components/SubscribeToNews';
 const Home = () => {
 	return (
 		<div>
@@ -26,9 +28,7 @@ const Home = () => {
 				</p>
 			</section>
 			<GradientLine />
-			<section id="projects">
-				<ProjectList />
-			</section>
+			<ProjectList />
 			<GradientLine />
 			<section id="about">
 				<About />
@@ -37,6 +37,12 @@ const Home = () => {
 			<Contact />
 			<GradientLine />
 			<Footer />
+			<GradientLine />
+
+			<ProjectIdeas />
+			<GradientLine />
+
+			<SubscribeToNews />
 		</div>
 	);
 };

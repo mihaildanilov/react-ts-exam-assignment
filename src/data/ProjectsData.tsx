@@ -1,4 +1,12 @@
-export const ProjectData = [
+export interface ProjectDataItem {
+	projectType: string;
+	projectTitle: string;
+	paragraph: string;
+	techUsed: string[];
+	image: string;
+}
+
+export const ProjectData: ProjectDataItem[] = [
 	{
 		projectType: 'Latest project',
 		projectTitle: 'Blitz',

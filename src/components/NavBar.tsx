@@ -14,7 +14,9 @@ const NavBar = () => {
 			<div id="nav-width">
 				<ul>
 					<li>
-						<span onClick={scrollToTop}>Mihail Danilov</span>
+						<span className="myname" onClick={scrollToTop}>
+							Mihail Danilov
+						</span>
 					</li>
 					<li>
 						<Link

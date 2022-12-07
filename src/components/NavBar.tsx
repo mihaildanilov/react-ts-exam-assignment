@@ -19,34 +19,22 @@ const NavBar = () => {
 						</span>
 					</li>
 					<li>
-						<Link
-							activeClass="active"
-							to="projects"
-							spy={true}
-							smooth={true}
-							offset={-59}
-							duration={500}>
+						<Link to="projects" spy={true} smooth={true} offset={-59} duration={500}>
 							Projects
 						</Link>
 					</li>
 					<li>
-						<Link
-							activeClass="active"
-							to="about"
-							spy={true}
-							smooth={true}
-							offset={-59}
-							duration={500}>
+						<Link to="about" spy={true} smooth={true} offset={-59} duration={500}>
 							About
 						</Link>
 					</li>
 					<li>
-						<Link
-							activeClass="active"
-							to="contact"
-							spy={true}
-							smooth={true}
-							duration={500}>
+						<Link to="ideas" offset={-59} spy={true} smooth={true} duration={500}>
+							Project Ideas
+						</Link>
+					</li>
+					<li>
+						<Link to="contact" spy={true} smooth={true} duration={500}>
 							Contact
 						</Link>
 					</li>

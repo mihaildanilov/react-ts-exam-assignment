@@ -34,15 +34,13 @@ const Home = () => {
 				<About />
 			</section>
 			<GradientLine />
+			<ProjectIdeas />
+			<GradientLine />
+			<SubscribeToNews />
+			<GradientLine />
 			<Contact />
 			<GradientLine />
 			<Footer />
-			<GradientLine />
-
-			<ProjectIdeas />
-			<GradientLine />
-
-			<SubscribeToNews />
 		</div>
 	);
 };

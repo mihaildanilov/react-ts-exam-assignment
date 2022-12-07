@@ -15,7 +15,7 @@ const ProjectIdeas = () => {
 	});
 	// if showMore=true show text
 	return (
-		<div>
+		<div id="ideas">
 			<h2 className="project-ideas">Check out my future project ideas:</h2>
 			<h5 className="project-ideas">
 				{showMore ? ideas : ideas.slice(0, 2)}

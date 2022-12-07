@@ -7,7 +7,7 @@ const SubscribeToNews = () => {
 		email: '',
 		name: '',
 	};
-	const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+	const { values, errors, touched, handleBlur, handleChange } = useFormik({
 		initialValues,
 		validationSchema: SubscribeToNewsScheme,
 		onSubmit: (values, action) => {
@@ -16,38 +16,38 @@ const SubscribeToNews = () => {
 		},
 	});
 	return (
-		<form onSubmit={handleSubmit}>
-			<div>
+		<form method="POST" action="https://www.w3schools.com/action_page.php">
+			<div id="subscribe">
 				<h2>Subscribe to newsletter</h2>
-				<div>
-					<InputForm
-						name="email"
-						value={values.email}
-						onChange={handleChange}
-						onBlur={handleBlur}
-						type="email"
-						labelName="Email"
-						placeholder="Email"
-					/>
-					{errors.email && touched.email ? (
-						<p className="form-error">{errors.email}</p>
-					) : null}
+				<div id="inputs">
+					<div>
+						<InputForm
+							name="email"
+							value={values.email}
+							onChange={handleChange}
+							onBlur={handleBlur}
+							type="email"
+							labelName="Email"
+							placeholder="Your email"
+							errors={errors.email}
+							touchedinput={touched.email}
+						/>
+					</div>
+					<div>
+						<InputForm
+							name="name"
+							value={values.name}
+							onChange={handleChange}
+							onBlur={handleBlur}
+							type="text"
+							labelName="Name"
+							placeholder="Your name"
+							errors={errors.name}
+							touchedinput={touched.name}
+						/>
+					</div>
 				</div>
-				<div>
-					<InputForm
-						name="name"
-						value={values.name}
-						onChange={handleChange}
-						onBlur={handleBlur}
-						type="text"
-						labelName="Name"
-						placeholder="Name"
-					/>
-					{errors.name && touched.name ? (
-						<p className="form-error">{errors.name}</p>
-					) : null}
-					<button type="submit">Subscribe</button>
-				</div>
+				<input className="show-more button" type="submit" value="Subscribe" />
 			</div>
 		</form>
 	);
